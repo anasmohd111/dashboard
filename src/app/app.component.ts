@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Glassmorphism_dashboard';
+
+  sideBarOpened: boolean = true
+
+  toggle() {
+    this.sideBarOpened = !this.sideBarOpened
+  }
 }

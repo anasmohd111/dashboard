@@ -1,0 +1,100 @@
+// header section
+.main-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    height: 58px;
+    flex-shrink: 0;
+
+    .menu-link-main {
+        text-decoration: none;
+        color: var(--theme-color);
+        padding: 0 30px;
+        white-space: nowrap;
+    }
+}
+
+// banner section
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    color: var(--theme-color);
+    padding: 20px 40px;
+
+    @media screen and (max-width: 510px) {
+        padding: 20px;
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 369px;
+        margin: auto;
+    }
+
+    &-header {
+        width: 100%;
+        justify-content: space-between;
+        background-image: url("https://www.transparenttextures.com/patterns/cubes.png"),
+            linear-gradient(
+                to right top,
+                #cf4af3,
+                #e73bd7,
+                #f631bc,
+                #fd31a2,
+                #ff3a8b,
+                #ff4b78,
+                #ff5e68,
+                #ff705c,
+                #ff8c51,
+                #ffaa49,
+                #ffc848,
+                #ffe652
+            );
+        border-radius: 14px;
+        padding: 20px 40px;
+        @media screen and (max-width: 415px) {
+            padding: 20px;
+        }
+    }
+}
+
+// card section
+.content-section {
+    margin-top: 30px;
+
+    &-title {
+        color: #f9fafb;
+        margin-bottom: 14px;
+    }
+}
+
+mat-card {
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    box-shadow: none;
+
+    app-card {
+        width: 350px;
+        font-size: 16px;
+        margin-bottom: 1rem;
+        background-color: var(--content-bg);
+        border-radius: 14px;
+        border: 1px solid var(--theme-bg-color);
+        padding: 20px;
+        cursor: pointer;
+        transition: 0.3s ease;
+
+        @media screen and (max-width: 1200px) {
+            width: 340px;
+            margin-bottom: 1rem;
+        }
+
+        &:hover {
+            transform: scale(1.02);
+            background-color: var(--theme-bg-color);
+        }
+    }
+}

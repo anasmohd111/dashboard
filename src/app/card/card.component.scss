@@ -1,0 +1,103 @@
+.top-section {
+    display: flex;
+    align-items: center;
+
+    // svg {
+    //     width: 28px;
+    //     border-radius: 6px;
+    //     margin-right: 16px;
+    //     flex-shrink: 0;
+    // }
+
+    .image1 {
+        width: 28px;
+        height: 28px;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Adobe_Premiere_Pro_CC_icon.svg/1200px-Adobe_Premiere_Pro_CC_icon.svg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-right: 0.5rem;
+        border: 1px solid #9a9aff;
+        border-radius: 5px;
+    }
+
+    .image2 {
+        width: 28px;
+        height: 28px;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Adobe_InDesign_CC_icon.svg/2101px-Adobe_InDesign_CC_icon.svg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-right: 0.5rem;
+        border: 1px solid #ff3066;
+        border-radius: 5px;
+    }
+
+    .image3 {
+        width: 28px;
+        height: 28px;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Adobe_XD_CC_icon.svg/2101px-Adobe_XD_CC_icon.svg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-right: 0.5rem;
+        border: 1px solid #ff61f6;
+        border-radius: 5px;
+    }
+
+    .image4 {
+        width: 28px;
+        height: 28px;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Adobe_Photoshop_Lightroom_CC_logo.svg/1200px-Adobe_Photoshop_Lightroom_CC_logo.svg.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-right: 0.5rem;
+        border: 1px solid #2daaff;
+        border-radius: 5px;
+    }
+
+    .text {
+        margin-bottom: 0;
+    }
+}
+.center-section {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6em;
+    margin-top: 20px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 20px;
+
+    .content {
+        margin-bottom: 0;
+    }
+}
+
+.bottom-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 16px;
+
+    .content-button {
+        background-color: #3a6df0;
+        border: none;
+        padding: 8px 26px;
+        color: #fff;
+        border-radius: 20px;
+        margin-top: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+        white-space: nowrap;
+
+        &:hover {
+            background-color: #fff;
+            color: black;
+        }
+    }
+
+    mat-icon {
+        margin: 12px 0 0 12px;
+    }
+}
